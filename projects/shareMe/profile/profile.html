@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+
+        <div class="card-wrapper">
+
+            <div class="image">
+                <img src="assets/IMG-20190601-WA0029-01.png" alt="" width="180px">
+            </div>
+
+            <div class="name">
+                <h2>mohit sain</h2>
+            </div>
+
+            <div class="designation">
+                <h3>frontend devloper</h3>
+            </div>
+
+            <div class="bottom-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                    
+                    <div>share my profile</div>
+                </button>
+
+                <button class="btn-follow btn-card">Follow me</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    </div>
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div>
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+
+        <div>
+
+            <h3>Share this via</h3>
+
+
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/mohit-s-3747a31ba/" class="icon" id="facebook">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/hackwhiz-8" class="icon" id="twitter">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/ohhhmohit_/" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/qr/53YXLTBOMSNTK1" class="icon" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
