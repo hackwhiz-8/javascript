@@ -176,7 +176,7 @@ async function fetchSearchWeatherInfo(city) {
         renderWeatherInfo(data);
     }
     catch(err) {
-        console.log( "error mila h bhai" + err);
+        alert(`city not found `);
         loadingScreen.classList.remove("active");
         
         errorscreen.classList.add("active");

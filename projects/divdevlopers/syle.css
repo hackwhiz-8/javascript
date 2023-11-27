@@ -1,0 +1,368 @@
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+    overflow: hidden;
+  }
+  
+  *,*::after,*::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: #ab080866;
+    font-family: "Space Mono", monospace;
+   color: white;
+   user-select: none;
+  }
+
+  .wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+  }
+  .head-box{
+
+    width: 40%;
+    border: 2px solid rgba(0, 0, 0, 0.295);
+    display: flex;
+    background: #00000088;
+    backdrop-filter: blur(10px);
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease-in;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+
+  .head-box .git-heading {
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: .90rem;
+    font-weight:500;
+    background: #000000;
+    backdrop-filter: blur(10px);
+    letter-spacing: 3px;
+  }
+
+  .head-box .git-heading h1{
+    background: #000;
+  }
+
+
+.head-box .btn-mode{
+         display: flex;
+         padding: 10px;
+         justify-content: center;
+         align-items: center;
+         gap: 10px; 
+         background: #000000;
+        backdrop-filter: blur(10px);
+        border-radius: 5px;
+        padding: 10px;
+        margin-right: 20px;
+
+  }
+  .head-box .btn-mode p{
+    font-size: 1.20rem;
+    letter-spacing: 1px;
+    font-weight: 800;
+    transition: all 1s ease-in;
+  }
+  .btn-text{
+    background-color: rgb(0, 0, 0) ;
+    user-select: none;
+  }
+
+  .head-box .btn-mode .btn{
+       
+     all: unset;
+     padding: 2px;
+     border-radius: 5px;
+     text-align: center;
+     background-color: rgba(0, 0, 0, 0.558);
+  }
+
+
+  @media screen and (max-width: 480px){
+    .head-box{
+      width: 100%;
+    }
+    .head-box .git-heading {
+      height: 50px;
+      font-size: .50rem;
+      border-radius: 5px;
+    }
+    .head-box .btn-mode{
+      
+     width: 10%;
+      height: 30px;
+     font-size: 0.2rem;
+     font-weight:300;
+     border-radius: 5px;
+     margin-right: 10px;
+   }
+   .head-box .btn-mode p{
+    display: none;
+   }
+  }
+
+  .search-form{
+    width: 40%;
+    height: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.295);
+    display: flex;
+   gap: 20px;
+    justify-content: center;
+      
+    transition: all 1s ease-in;
+    border-radius: 10px;
+    background: #00000088;
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+  }
+
+  .search-form input{
+    all: unset;
+    width: 80%;
+    color: rgb(2, 0, 0);
+    font-size: 1.20rem;
+  }
+  .search-form input::placeholder{
+    color: rgba(255, 255, 255, 0.357)
+  }
+
+  .search-form .btn{
+    position: relative;
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      background-color: black;
+      width: 40px;
+      height: 30px;
+      border-radius: 5px;
+      margin-top: 2px;
+  }
+
+  @media screen and (max-width: 480px){
+    .search-form{
+      width: 100%;
+      height: 40px;
+     
+    }
+  }
+
+ .profile-box{
+ 
+  width: 40%;
+  height: 400px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+    background: #0000003d;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+ }
+
+ .profile-section{
+  margin: 10px;
+  padding-top: 0px;
+   width: 95%;
+   height: 150px;
+   display: flex;
+   justify-content: space-between;
+  align-items: center;
+   background-color: rgba(0, 0, 0, 0.542);
+   border-radius: 10px;
+   
+ }
+
+ #profile-img{
+  border-radius: 50%;
+  margin-left: 30px;
+ }
+
+ .bio-section{
+  margin-left: 20px;
+  background-color: transparent;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+ }
+
+ .bio-section #name{
+  background-color: transparent;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+ }
+
+ a{
+  text-decoration: none;
+ }
+
+ .bio-section a{
+  background-color: transparent;
+  all: unset;
+  cursor: pointer;
+ }
+
+ .bio-section .bio1{
+  height: 50%;
+  background-color: transparent;
+ }
+
+.profile-section .date{
+  margin-right: 20px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  background-color: transparent;
+ 
+}
+
+.info-section{
+
+  margin: 10px;
+  padding-top: 0px;
+   width: 95%;
+  border-radius: 10px;
+   height: 100px;
+   display: flex;
+   
+   gap: 60px;
+   align-items: center;
+   background-color: none;
+   background-color: rgba(0, 0, 0, 0.542);
+   border-radius: 10px;
+}
+
+.info-section .info1{
+  margin: 10px;
+  border: 1px solid rgba(2, 0, 0, 0.437);
+  width: 30%;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+
+}
+.info-section p{
+  background-color: rgba(0, 0, 0, 0.548);
+}
+
+.profile-bottom{
+  background-color: rgba(0, 0, 0, 0.542);
+   border-radius: 10px;
+   width: 100%;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   gap: 60px;
+   align-items: center;
+   background-color: none;
+   flex-wrap: wrap;
+}
+
+.profile-sub{
+  width: 40%;
+  height: 100px;
+  background: transparent;
+}
+
+.profile-bottom-sub{
+  width: 100%;
+  height: 50px;
+  border: 1PX solid black;
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  background-color: black;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.profile-bottom-sub p,img,a{
+         background: transparent;
+}
+
+.btm-img{
+  background-color: transparent;
+}
+
+.profile-bottom-sub a{
+  all:unset;
+}
+
+@media screen and (max-width: 480px) {
+  .profile-box{
+ 
+    width: 100%;
+    /* height: 400px;  */
+    /* justify-content: center; */
+   
+   }
+   .profile-section{
+    
+     width: 95%;
+     height: 200px;
+     flex-wrap: wrap;
+   }
+   #profile-img{
+    width: 100px;
+    height: 100px;
+   }
+   .bio-section{
+    gap: 8px;
+   }
+   .profile-section .date{
+    margin-left: 20px;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    background-color: transparent;
+   
+  }
+  .info-section{
+    padding: 10px;
+    justify-content: space-around;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    margin: 20px;
+  }
+  .info-section .info1{
+    width:35%;
+    gap: 5px;
+  }
+  .profile-bottom{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .profile-sub{
+    width:40%;
+    margin-bottom: 10px;
+    
+  }
+
+  .profile-bottom-sub{
+   
+    
+    
+  }
+}

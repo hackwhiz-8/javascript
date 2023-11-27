@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="syle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- head box  -->
+      <div class="head-box">
+        <div class="git-heading">
+          <h1>git search</h1>
+        </div>
+
+        <div class="btn-mode">
+          <p btn-text class="btn-text">light</p>
+          <button class="btn">
+            <img src="assets/images/sun-icon.svg" alt="" btn-img />
+          </button>
+        </div>
+      </div>
+
+      <form search-form class="search-form">
+
+        <input placeholder="enter the username....." input-search />
+        <button class="btn" type="submit">
+          <img src="assets/images/search-icon.svg" alt="" width="20px" />
+        </button>
+
+      </form>
+
+      <div class="profile-box">
+        <!-- profile section -->
+        <div class="profile-section">
+          <img src="" alt="" git-search-img id="profile-img"  width="80px" />
+          <div class="bio-section">
+            <p id="name"></p>
+            <a href="" profile-link class="profile-link"></a>
+            <p bio1 class="bio1"></p>
+          </div>
+          <p date class="date"></p>
+        </div>
+
+        <div class="info-section">
+          <div class="info-repo info1">
+            <p>repos</p>
+            <p repos></p>
+          </div>
+          <div class="info-follo info1">
+            <p>followers</p>
+            <p followers></p>
+          </div>
+          <div class="info-following info1">
+            <p>following</p>
+            <p following></p>
+          </div>
+        </div>
+
+        <div class="profile-bottom">
+          
+          <div class="profile-sub">
+              <div class="profile-bottom-sub">
+                <div class="btm-img" >
+                  <img src="assets/images/location-icon.svg" alt="" />
+                </div>
+                <p location></p>
+              </div>
+              <div class="profile-bottom-sub">
+                <div class="btm-img">
+                  <img src="assets/images/company-icon.svg" alt=""  />
+                </div>
+                <p email ></p>
+              </div>  
+          </div>
+          
+          <div class="profile-sub">
+            <div class="profile-bottom-sub">
+              <div class="btm-img"><img src="assets/images/twitter-icon.svg" alt=""  /></div>
+              <a twiter href=""></a>
+            </div>
+            <div class="profile-bottom-sub">
+              <div class="btm-img"><img src="assets/images/website-icon.svg" alt=""  /></div>
+              <p company>undefined</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+<img src="assets/images/moon-icon.svg" alt="">
+    <script src="index.js"></script>
+  </body>
 </html>
